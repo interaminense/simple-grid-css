@@ -1,12 +1,15 @@
 {
   "name": "simple-grid-css",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple Grid Css is a responsive grid system based on flexbox css",
   "repository": {
     "type": "git",
     "url": "https://github.com/interaminense/simple-grid-css.git"
   },
-  "keywords": ["simple-grid-css", "grid-css-flexbox"],
+  "keywords": [
+    "simple-grid-css",
+    "grid-css-flexbox"
+  ],
   "author": "Adriano Interaminense",
   "license": "MIT",
   "bugs": {
