@@ -6,6 +6,7 @@ $medias: (
 );
 
 $columns: 12;
+$baseline: 15px;
 
 @mixin media($initials, $columns) {
 	@for $i from 1 through $columns {
@@ -20,8 +21,12 @@ $columns: 12;
 .row {
 	display: flex;
 	flex-wrap: wrap;
+	margin-left: -#{$baseline};
+	margin-right: -#{$baseline};
 
 	.col {
+		padding-left: $baseline;
+		padding-right: $baseline;
 
 		@each $media in $medias {
 			@media (min-width: map-get($media, size)) {
