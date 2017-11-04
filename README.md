@@ -18,4 +18,28 @@ Another grid in css, however, this grid is much leaner! Great for building layou
 2. You will then find the source code in `node_modules/simple-grid-css/simple-grid-css.css`;
 3. So far, so good!
 
-* Feel free to contribute 🤘
+## How to use
+
+```html
+<div class="row">
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+  <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+</div>
+```
+
+*Tip: Add the class `no-baseline` if you want to remove the spacing between the columns*
+
+```html
+<div class="row no-baseline">
+  <div class="col-xs-12 col-sm-6">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </div>
+</div>
+```
+
+
+**Feel free to contribute 🤘**
