@@ -20,7 +20,10 @@ $baseline: 15px;
 
 .row {
 	display: flex;
-	flex-wrap: wrap;
+
+	&.no-baseline {
+		flex-wrap: wrap;
+	}
 
 	&:not(.no-baseline) {
 		margin-left: -#{$baseline};
@@ -33,14 +36,13 @@ $baseline: 15px;
 	}
 
 	.col {
-		width: 100%; 
+		width: 100%;
 		position: relative;
-		
+
 		@each $media in $medias {
 			@media (min-width: map-get($media, size)) {
 				@include media(map-get($media, initials), $columns);
 			}
 		}
-
 	}
 }
