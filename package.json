@@ -6,6 +6,10 @@
     "type": "git",
     "url": "https://github.com/interaminense/simple-grid-css.git"
   },
+  "scripts": {
+		"sass": "sass simple-grid-css.scss simple-grid-css.css --style compact && sass simple-grid-css.scss simple-grid-css.min.css --style compressed",
+		"publish": "npm version patch && npm publish"
+  },
   "keywords": [
     "simple-grid-css",
     "grid-css-flexbox"
